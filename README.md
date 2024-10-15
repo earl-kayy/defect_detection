@@ -66,7 +66,7 @@ The final stacking model was evaluated using the **AUC score**, **TPR/FNR (True 
 ### Visualization
 #### Individual Model
 ![Ind._AUC](/image/singlemodel_roc.png)
-##### Stacked Model
+#### Stacked Model
 ![Stk.AUC](/image/roc_curve.png)
 ![Stk.TF](/image/tpr_fnr.png)
 
