@@ -11,7 +11,7 @@ The project followed these main steps:
 4. **Final Stacking Ensemble Model**
 
 ## Exploratory Data Analysis (EDA)
-During the initial exploratory analysis, we identified a key issue with the dataset: **data imbalance**. The number of non-defective products significantly outnumbered defective ones, which posed a challenge in using metrics like accuracy for evaluation. For instance, even if a model predicted all products as non-defective, it would achieve high accuracy simply due to the imbalance.
+During the initial exploratory analysis, I identified a key issue with the dataset: **data imbalance**. The number of non-defective products significantly outnumbered defective ones, which posed a challenge in using metrics like accuracy for evaluation. For instance, even if a model predicted all products as non-defective, it would achieve high accuracy simply due to the imbalance.
 
 To address this, evaluation metrics were shifted to more appropriate ones for imbalanced data:
 - **AUC Score**
@@ -31,7 +31,7 @@ Further, I engineered features such as:
 
 ### Feature Engineering
 Various features were engineered to improve the model’s performance:
-- **Ingredient Ratios**: We hypothesized that relative proportions of ingredients (e.g., `A/gram`, `extra/gram`) could provide better insight than absolute values.
+- **Ingredient Ratios**: Hypothesized that relative proportions of ingredients (e.g., `A/gram`, `extra/gram`) could provide better insight than absolute values.
 - **Date Features**: Date columns were transformed to capture **seasonality** and **durations**. This included calculating the difference between purchase date and inspection date.
 
 ### Handling Data Imbalance
@@ -65,10 +65,10 @@ The final stacking model was evaluated using the **AUC score**, **TPR/FNR (True 
 
 ### Visualization
 #### Individual Model
-![Ind._AUC]('/image/singlemodel_roc.png)
+![Ind._AUC](/image/singlemodel_roc.png)
 ##### Stacked Model
-![Stk.AUC]('/image/roc_curve.png')
-![Stk.TF]('/image/tpr_fnr.png')
+![Stk.AUC](/image/roc_curve.png)
+![Stk.TF](/image/tpr_fnr.png)
 
 
 ## Conclusion
