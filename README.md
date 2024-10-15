@@ -20,6 +20,9 @@ To address this, evaluation metrics were shifted to more appropriate ones for im
 ### Invalid Data and Outliers
 During the EDA process, some **invalid records** that violated logical constraints (e.g., sum of ingredients exceeding the total weight) were identified. Instead of removing these records prematurely, I conducted **outlier analysis** to ensure that adjusting these records wouldn’t distort the data.
 
+### In-depth Exploratory Data Analysis
+Significant time and effort were invested in exploring relationships between all variables. I visualized every feature against others using heatmaps, scatter plots, and boxplots to uncover patterns and correlations. These extensive visual analyses helped guide feature engineering by providing deeper insights into the data structure.
+
 ### Data Cleaning and Preprocessing
 Missing values, particularly in the `wtcd` column, were addressed after determining no strong correlations between `wtcd` and other variables. Given the minimal impact on the dataset, rows with missing `wtcd` values were removed.
 
